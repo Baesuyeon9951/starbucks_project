@@ -242,7 +242,7 @@ html > body {
 }
 
 .pc-top-bar__menu-1 > ul > li:hover > .menu-1__sub-menu{
-	max-height: 300px;
+	max-height: 400px;
 }
 
 .menu-1__sub-menu > .con > ul {
@@ -573,6 +573,7 @@ display: block;
 	max-width: 100%;
 	height: 100%;
 	position: relative;
+	border: solid red;
 }
 .mobile-main-top-banner__slogan{
 	position: absolute;
