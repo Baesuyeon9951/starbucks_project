@@ -1870,7 +1870,7 @@ display: block;
 
 /* footer 어워즈 구현 시작 */
 .footer-awards-wrap{
-	min-height: 80px;
+	height: 80px;
 	background-color: #282828;
 	padding: 20px 0;
 }
@@ -1886,7 +1886,7 @@ display: block;
 	flex-wrap: wrap;
 	justify-content: center;
 }
-
+/* footer 어워즈 구현 끝 */
 /* footer copyright 구현 시작 */
 .footer-copyright-wrap__con{
 	color: #999;
@@ -1944,7 +1944,7 @@ display: block;
 	margin-top: 30px;
 	text-align: center;
 }
-/* footer 어워즈 구현 끝 */
+
 /* pc-footer 구현 끝 */
 
 /* tablet-footer 구현 시작 */
@@ -1974,14 +1974,14 @@ display: block;
 	padding: 2% 5%;
 } 
 /* tablet-footer 구현 끝 */
+
 .mobile-footer .footer-menu-wrap{
 	padding: 0; 
 	overflow-x: hidden;
-}
-.mobile-footer .footer-menu-wrap{
 	width: 100%;
 	background-color: #554c46;
 }
+
 .mobile-footer .footer-menu-btn {
 	height: 100%;
 	min-width: 90%;
@@ -2040,6 +2040,67 @@ display: block;
 	background-image: url(images/mobile_footer_arrow_up.png);
 }
 
+.mobile-footer .footer-menu-wrap .footer-menu-wrap__con{
+	max-width: 600px;
+} 
+/* mobile-footer 어워즈 */
+.footer-awards-wrap{
+	height: 80px;
+	background-color: #282828;
+	padding: 5px;
+}
+.mobile-footer .footer-awards-wrap__con{
+max-width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+.footer-awards-slider{
+	margin:0 auto;
+	max-width: 320px;
+}
+.footer-awards-slider .swiper .swiper-wrapper .swiper-slide{
+	width: 320px;
+	height:100%;
+}
+.footer-awards-slider .swiper .swiper-wrapper .swiper-slide > a{
+display: block;
+}
+.footer-awards-slider .swiper .swiper-wrapper .swiper-slide > a >img{
+	margin: 0 auto;
+	max-width: 100%;
+	display: block;
+}
+.footer-awards-slider__control{
+	margin: 0 auto;
+	width: 320px;
+	text-align: center;
+	font-size: 12px;
+	color:white;
+}
+.footer-awards-slider__control>*{
+	display: block;
+}
+
+.footer-awards__play-btn.active{
+	display: none;
+}
+.footer-awards__pause-btn.active{
+	display: none;
+}
+
+.footer-awards-slider__control .footer-awards__play-btn{
+	display: none;
+}
+.footer-awards-slider__control .footer-awards__pause-btn{
+	display: block;
+}
+.footer-awards-slider__control.active .footer-awards__pause-btn{
+	display: none;
+}
+.footer-awards-slider__control.active .footer-awards__play-btn{
+	display: block;
+}
 /* mobile-footer 구현 끝 */
 /* footer 구현 끝 */
 

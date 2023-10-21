@@ -102,6 +102,31 @@ function MobileFooterMenu__init() {
 
 MobileFooterMenu__init();
 
+// FooterAwardsSlider 구현시작
+
+function FooterAwardsSlider(){
+	
+	const FooterAwardsSlider = new Swiper('.footer-awards-slider .swiper', {
+	loop: true,
+	autoplay:{
+		delay:1500
+	}
+});
+	
+$('.footer-awards-slider__control').click(function(){
+	
+	if($('.footer-awards-slider__control').hasClass('active')){
+		$('.footer-awards-slider__control').removeClass('active');
+		FooterAwardsSlider.autoplay.start();
+	}
+	else{
+		$('.footer-awards-slider__control').addClass('active');
+		FooterAwardsSlider.autoplay.stop();
+	}
+});
+}
+
+FooterAwardsSlider();
 // footer 메뉴박스 구현 끝
 
 /* 발견되면 활성화시키는 라이브러리 시작 */
