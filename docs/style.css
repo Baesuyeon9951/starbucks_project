@@ -492,6 +492,7 @@ display: block;
 .pc-main-top-banner .main-top-banner__con{
 	height: 100%;
 	max-width: 100%;
+	overflow-x: hidden;
 	position: relative;
 }
 .pc-main-top-banner .main-top-banner__slogan{
@@ -568,6 +569,7 @@ display: block;
 	background-repeat: no-repeat;
 	background-position: center top;
 	background-size: cover;
+	overflow-x: hidden;
 }
 .mobile-main-top-banner__con{
 	max-width: 100%;
@@ -814,6 +816,7 @@ display: block;
 	height: 100%;
 	max-width: 1080px;
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 .reward-logo > img{
 	width: 176px;
@@ -902,6 +905,7 @@ display: block;
 	height: 100%;
 	display: flex;
 	justify-content: center;
+	overflow-x: hidden;
 	position: relative;
 }
 .tablet-reward-wrap .reward-logo > img{
@@ -957,6 +961,7 @@ display: block;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
+	overflow-x: hidden;
 }
 .mobile-reward-wrap .reward-logo > img{
 	display: block;
@@ -1004,7 +1009,7 @@ display: block;
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	overflow: hidden;
+	overflow-x: hidden;
 }
 .pc-fall-blend-bean .fall-blend-bean__con{
 	position: relative;
@@ -1012,6 +1017,7 @@ display: block;
 	height: 100%;
 	margin: 0 auto;
 	display: flex;
+	overflow-x: hidden;
 }
 
 .pc-fall-blend-bean .bean-img-box{
@@ -1067,16 +1073,20 @@ display: block;
 /* mobile 가을 원두 배너 구현 시작 */
 .mobile-fall-blend-bean{
 	min-height: 165vw;
+	max-width:100%;
+	overflow-x: hidden;
 }
 .mobile-fall-blend-bean{
 	background-image: url(images/2023_m_autumn_promotion_bg_1.jpg);
 	background-repeat: no-repeat;
 	height: 165vw;
 	background-size: cover;
+	overflow-x: hidden;
 }
 .mobile-fall-blend-bean .fall-blend-bean__con{
 	height: 100%;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .mobile-fall-blend-bean .bean-img-box > img {
@@ -1135,7 +1145,7 @@ display: block;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: 0 auto;
-	overflow: hidden;
+	overflow-x:  hidden;
 }
 
 
@@ -1144,6 +1154,7 @@ display: block;
 	max-width: 100%;
 	height: 100%;
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 .pc-reserve-wrap .reserve__img > img {
 	display: block;
@@ -1183,6 +1194,7 @@ display: block;
 /* mobile 리저브배너 구현 시작 */
 .mobile-reserve-wrap{
 	position: relative;
+	overflow-x:  hidden;
 }
 .mobile-reserve-wrap > img{
 	width: 100%;
@@ -1221,11 +1233,13 @@ display: block;
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	overflow-x: hidden;
 }
 .favorite-banner__con{
 	max-width: 1280px;
 	height: 100%;
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 
 .pc-favorite-banner .favorite__content{
@@ -1300,9 +1314,11 @@ display: block;
 	background-size: cover;
 	background-position: center;
 	position: relative;
+	overflow-x: hidden;
 }
 .mobile-favorite-banner .favorite-banner__con{
 	position: relative;
+	overflow-x: hidden;
 }
 
 .mobile-favorite-banner .favorite__img > img{
@@ -1358,6 +1374,7 @@ display: block;
 	background-position: center;
 	position: relative;
   z-index: 10;
+	overflow-x: hidden;
 }
 .pc-reserve_magazine .reserve_magazine__con{
 	height: 100%;
@@ -1365,6 +1382,7 @@ display: block;
 	margin: 0 auto;
 	position: relative;
   z-index: 10;
+	overflow-x: hidden;
 }
 .pc-reserve_magazine .magazine-content{
 	position: absolute;
@@ -1410,6 +1428,7 @@ display: block;
 .tablet-reserve_magazine{
 	height: auto;
 	position: relative;
+	overflow-x:  hidden;
 }
 .tablet-reserve_magazine > img{
 	max-width: none;
@@ -1439,6 +1458,7 @@ display: block;
 .mobile-reserve_magazine{
 	height: auto;
 	position: relative;
+	overflow-x: hidden;
 }
 .mobile-reserve_magazine > img{
 	max-width: none;
@@ -1479,12 +1499,14 @@ display: block;
 	background-image: url(images/store_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow-x: hidden;
 }
 .pc-store-banner .store-banner__con{
 	max-width: 1280px;
 	height: 100%;
 	margin: 0 auto;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .pc-store-banner .store-banner__con::after{
@@ -1581,13 +1603,14 @@ display: block;
 	background-image: url(images/store_bg.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;
+	overflow-x: hidden;
 }
 .mobile-store-banner .store-banner__con{
-	width: 500px;
 	margin: 0 auto;
-	max-width: 100%;
+	max-width: 500px;
 	height: 100%;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .mobile-store-banner .store-banner__con::after{
@@ -1651,7 +1674,7 @@ display: block;
 	left: 50%;
 	margin-left: -220px;
 	top: 474px;
-	width: 440px;
+	max-width: 440px;
 	z-index: 7;
 }
 
@@ -1680,7 +1703,121 @@ display: block;
 	height: 34px;
 	z-index: 7;
 }
+@media (width <= 480px){
+	.mobile-store-banner{
+		height: 750px;
+		background-image: url(images/store_bg.jpg);
+		background-repeat: no-repeat;
+		background-size: cover;
+		width: 100%;
+		overflow-x: hidden;
+	}
+	.mobile-store-banner .store-banner__con{
+		margin: 0 auto;
+		max-width: 500px;
+		height: 100%;
+		position: relative;
+		overflow-x: hidden;
+	}
+	
+	.mobile-store-banner .store-banner__con::after{
+		content:"";
+		position: absolute;
+		background-image: url(images/store_exp_img03.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		height: 73px;	
+		width: 180px;
+		left: 9%;
+		top: 240px;
+		z-index: 1;
+	}
+	
+	.mobile-store-banner .store-banner__con::before{
+		content:"";
+		position: absolute;
+		background-image: url(images/store_exp_img04.png);
+		background-repeat: no-repeat;
+		background-size: 100% auto;
+		right: 10px;
+		bottom: 0;
+		width: 170px;
+		height: 75px;
+		z-index: 1;
+	}
+	.mobile-store-banner .store-img-1 > img{
+		display: block;
+		position: absolute;
+		height: 204px;
+		top: 0;
+		left: 10%;
+		width: 240px;	
+		z-index: 5;
+	}
+	.mobile-store-banner .store-img-2 > img{
+		display: block;
+		position: absolute;
+		height: 168px;
+		top: 21%;
+		left: 45%;	
+		width: 170px;
+		z-index: 4;
+	}
+	
+	.mobile-store-banner .store-txt-1 {
+		position: absolute;
+		height: 45px;
+		width: 312px;
+		left: 50%;
+		transform: translateX(-50%);
+		position: absolute;
+		top: 385px;
+		z-index: 7;
+	}
+	
+	.mobile-store-banner .store-txt-2{
+		position: absolute;
+		height: 89px;
+		left: 50%;
+		margin-left: -150px;
+		top: 450px;
+		width: 300px;
+		z-index: 7;
+	}
+	
+	.mobile-store-banner .store-txt-1 > img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		transform: translateY(-500%);
+		transition: transform 1s;
+	}
+	.mobile-store-banner .store-txt-2 > img{
+		display: block;
+		width: 100%;
+		height: 100%;
+		transform: translateY(100%);
+		transition: transform 1s;
+	}
+	
+	.mobile-store-banner .store-txt-1.active > img{
+		transform: translateY(0);
+	}
+	.mobile-store-banner .store-txt-2.active > img{
+		transform: translateY(0);
+	}
+	
+	.mobile-store-banner .store-btn{
+		left: 50%;	
+		margin-left: -62px;
+		position: absolute;
+		top: 560px;
+		width: 121px;
+		height: 34px;
+		z-index: 7;
+	}
 
+}
 /* mobile 스토어 배너 구현 끝 */
 
 /* 스토어 배너 구현 끝 */
@@ -1692,6 +1829,7 @@ display: block;
 	width: 100%;
 	background-color: #2C2A29;
 	padding-bottom: 35px;
+
 }
 /* footer 메뉴 구현 시작 */
 .footer-menu{
@@ -1704,6 +1842,7 @@ display: block;
 	padding: 32px 0 35px 0;
 	margin: 0 auto;
 	position: relative;
+	overflow-x: hidden;
 }
 .footer-menu-wrap__con > .footer-menu-img{
 	position: absolute;
@@ -1739,6 +1878,7 @@ display: block;
 	max-width: 1182px;
 	height: 100%;
 	margin: 0 auto;
+	overflow-x: hidden;
 }
 
 .footer-awards__img-box{
@@ -1792,9 +1932,10 @@ display: block;
 	align-items: center;
 	justify-content: center;
 	padding: 10px;
-	width: 100px;
+	max-width: 100px;
 	height: 35px;
 	line-height: 30px;
+	white-space: nowrap;
 }
 .copyright-btn-box > a:hover{
 	text-decoration: underline;
@@ -1810,6 +1951,7 @@ display: block;
 
 .tablet-footer .footer-menu-wrap__con{
 	width: 96%;
+	overflow-x: hidden;
 }
 .tablet-footer .footer-menu > ul{
 	width: calc(96% / 3);
@@ -1820,8 +1962,7 @@ display: block;
 .tablet-footer .footer-menu > ul > li{
 	padding: 5px;
 }
-.tablet-footer .footer-menu-btn > a,
-.mobile-footer .footer-menu-btn > a{
+.tablet-footer .footer-menu-btn > a{
 	display: flex;
 	color: #ffffff;
 	font-size: 24px;
@@ -1835,20 +1976,35 @@ display: block;
 /* tablet-footer 구현 끝 */
 .mobile-footer .footer-menu-wrap{
 	padding: 0; 
+	overflow-x: hidden;
 }
 .mobile-footer .footer-menu-wrap{
-
 	width: 100%;
 	background-color: #554c46;
 }
 .mobile-footer .footer-menu-btn {
-	width: 90%;
+	height: 100%;
+	min-width: 90%;
+	padding: 0 10px;
 	margin: 25px auto;
 }
+
+.mobile-footer .footer-menu-btn > a{
+	display: flex;
+	color: #ffffff;
+	font-size: 15px;
+	font-family: 'Arial';
+	border: 2px solid #ffffff;
+	border-radius: 3px;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	padding: 2% 5%;
+	white-space: nowrap;
+} 
 .mobile-footer .footer-menu ul ul{
 	display: none;
 }
-
 
 .mobile-footer .footer-menu  ul li a{
 	width: 100%;
